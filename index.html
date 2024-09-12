@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulario de Cálculo</title>
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Calculadora de Horas</h1>
+        <form id="calcForm">
+            <label for="valor1">Salario Bruto:</label>
+            <input type="number" id="valor1" required><br>
+
+            <label for="valor2">Horas simples:</label>
+            <input type="number" id="valor2" required><br>
+
+            <label for="valor3">Horas al 50%:</label>
+            <input type="number" id="valor3" required><br>
+
+            <label for="valor4">Horas al 100%:</label>
+            <input type="number" id="valor4" required><br>
+
+            <button type="button" onclick="calcular()">Calcular</button>
+        </form>
+
+        <div id="resultado" class="result"></div>
+   </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
